@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANOFAN Company</title>
+    <style>
+        /* Stylesheet for FANOFAN Company website */
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+
+#ceiling-fans, #table-fans, #exhaust-fans, #gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fan-card {
+    flex: 0 0 18.5rem;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fan-card:last-child {
+    margin-right: 0;
+}
+
+.fan-card img {
+    width: 100%;
+    height: 300px;
+}
+
+.fan-details {
+    padding: 10px;
+}
+
+.fan-details h3 {
+    margin-top: 0;
+}
+
+.fan-details p {
+    margin: 5px 0;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .sitemap a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+footer .advertise {
+    /* Advertisement section styles */
+}
+
+nav ul li a:hover{
+    color: #2399fd;
+    font-weight: bolder;
+}
+
+#about {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 60%;
+}
+
+.image {
+    width: 35%;
+}
+
+.image:hover{
+    filter: invert();
+}
+
+img {
+    /* max-width: 100%; */
+    height: auto;
+}
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.info {
+    width: calc(33.33% - 20px);
+}
+
+.info h3 {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+#queries {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.query-form {
+    text-align: center;
+}
+
+.query-form h3 {
+    margin-bottom: 20px;
+}
+
+#query-form input,
+#query-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#query-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#query-form button:hover {
+    background-color: #555;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="FANOFAN Company Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#ceiling">Ceiling Fans</a></li>
+                <li><a href="#table">Table Fans</a></li>
+                <li><a href="#exhaust">Exhaust Fans</a></li>
+                <li><a href="#collection">Gallery</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#queries">Queries</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="ceiling">
+            <br><br><br><br><br>
+            <h2>Ceiling Fans</h2>
+            <div id="ceiling-fans">
+                <div class="fan-card">
+                    <img src="c1.jpg" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="c2.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="c3.jpg" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="c4.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="c5.jpg" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="c6.jpeg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="c7.webp" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="c8.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="c9.avif" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="c10.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="table">
+            <br><br><br><br><br>
+            <h2>Table Fans</h2>
+            <div id="table-fans">
+                <div class="fan-card">
+                    <img src="f1.webp" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="f2.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="f3.webp" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="f4.webp" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="f5.jpg" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="f6.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="f7.webp" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="f8.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="f9.webp" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="f10.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="exhaust">
+            <br><br><br><br><br>
+            <h2>Exhaust Fans</h2>
+            <div id="exhaust-fans">
+                <div class="fan-card">
+                    <img src="e1.webp" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="e2.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="e3.jpg" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="e4.webp" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="e5.jpg" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="e6.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="e7.jpg" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="e8.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="e9.jpg" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="e10.webp" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="collection">
+            <br><br><br><br><br>
+            <h2>Gallery</h2>
+            <div id="gallery">
+                <div class="fan-card">
+                    <img src="c2.jpg" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="c5.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="c6.jpeg" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="c8.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="c10.jpg" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="f2.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="f5.jpg" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="e4.webp" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="e7.jpg" alt="Ceiling Fan 1">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 1</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $100</p>
+                    </div>
+                </div>
+                <div class="fan-card">
+                    <img src="c1.jpg" alt="Ceiling Fan 2">
+                    <div class="fan-details">
+                        <h3>Ceiling Fan Model 2</h3>
+                        <p>Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        <p>Pricing: $120</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="content">
+                    <div class="text">
+                        <p>FANOFAN Company is dedicated to providing high-quality fans for various needs. We specialize in manufacturing a wide range of fans, including ceiling fans, table fans, and exhaust fans. With our commitment to innovation and customer satisfaction, we strive to exceed your expectations with every product.</p>
+                        <p>Our mission is to create efficient and reliable fans that enhance comfort and improve air circulation in homes, offices, and other spaces. We value sustainability and eco-friendliness, ensuring that our products are energy-efficient and environmentally responsible.</p>
+                        <p>At FANOFAN Company, we believe in the power of fans to make a difference in people's lives. Whether it's keeping you cool on a hot day or providing ventilation in enclosed spaces, our fans are designed to meet your needs and enhance your living environment.</p>
+                    </div>
+                    <div class="image">
+                        <img src="s1.png" alt="About Us Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="queries">
+            <div class="container">
+                <h2>Queries</h2>
+                <div class="query-form">
+                    <h3>Submit Your Query</h3>
+                    <form id="query-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="query" placeholder="Your Query" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    var queryForm = document.getElementById("query-form");
+                    queryForm.addEventListener("submit", function(event) {
+                        event.preventDefault(); // Prevent the default form submission
+                        var formData = new FormData(queryForm);
+                        // You can handle form submission here, such as sending the data to a server or displaying a confirmation message
+                        alert("Thank you for submitting your query!");
+                        queryForm.reset(); // Optionally reset the form fields after submission
+                    });
+                });
+
+            </script>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <div class="info">
+                        <h3>Address:</h3>
+                        <p>123 Main Street</p>
+                        <p>City, State, Zip Code</p>
+                    </div>
+                    <div class="info">
+                        <h3>Email:</h3>
+                        <p>info@fanofancompany.com</p>
+                    </div>
+                    <div class="info">
+                        <h3>Phone:</h3>
+                        <p>(123) 456-7890</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    var contactForm = document.getElementById("contact-form");
+                    contactForm.addEventListener("submit", function(event) {
+                        event.preventDefault(); // Prevent the default form submission
+                        alert("Thank you for contacting us! We will get back to you soon.");
+                        contactForm.reset();
+                    });
+                });
+            </script>
+        </section>
+       
+        
+        
+    </main>
+
+    <footer>
+        <div class="sitemap">
+            <a href="#sitemap">Site Map</a>
+            <a href="#about">About Us</a>
+            <a href="#queries">Queries</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="advertise">
+            <h3>Advertisement</h3>
+            <!-- Add advertisement content here -->
+        </div>
+    </footer>
+</body>
+</html>
