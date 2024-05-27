@@ -259,9 +259,56 @@ h2 {
 #query-form button:hover {
     background-color: #555;
 }
+.download{
+    margin-left: 28%;
+}
+
+#advertisement {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#advertisement h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.facility {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.facility h3 {
+    color: #007BFF;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.facility p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .advertisement {
+        padding: 10px;
+    }
+
+    .facility h3 {
+        font-size: 1.2em;
+    }
+}
+
 
 
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 </head>
 <body>
     <header>
@@ -270,13 +317,15 @@ h2 {
         </div>
         <nav>
             <ul>
-                <li><a href="#ceiling">Ceiling Fans</a></li>
-                <li><a href="#table">Table Fans</a></li>
-                <li><a href="#exhaust">Exhaust Fans</a></li>
-                <li><a href="#collection">Gallery</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#queries">Queries</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#ceiling" target=”_blank”>Ceiling Fans</a></li>
+                <li><a href="#table" target=”_blank”>Table Fans</a></li>
+                <li><a href="#exhaust" target=”_blank”>Exhaust Fans</a></li>
+                <li><a href="#collection" target=”_blank” >Gallery</a></li>
+                <li><a href="#about" target=”_blank” >About Us</a></li>
+                <li><a href="#queries" target=”_blank”>Queries</a></li>
+                <li><a href="#advertisement" target=”_blank”>Facilities</a></li>
+                <li><a href="#sitemap" target=”_blank”>Site Map</a></li>
+                <li><a href="#contact" target=”_blank” >Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -639,7 +688,12 @@ h2 {
                     <div class="image">
                         <img src="s1.png" alt="About Us Image">
                     </div>
+                    
                 </div>
+                <div class="download">
+                <button id="downloadBtn">Download PDF</button>
+                <script src="download.js"></script>
+            </div>
             </div>
         </section>
         <section id="queries">
@@ -696,10 +750,63 @@ h2 {
                 });
             </script>
         </section>
+        <section id="advertisement">
+            <h2>Our FAN Facilities</h2>
+            <div class="facility">
+                <h3>Exclusive Content Access</h3>
+                <p>Get early access to exclusive interviews, behind-the-scenes videos, and more.</p>
+            </div>
+            <div class="facility">
+                <h3>Live Streaming Events</h3>
+                <p>Watch live events, concerts, and special shows directly from our platform.</p>
+            </div>
+            <div class="facility">
+                <h3>Merchandise Discounts</h3>
+                <p>Enjoy exclusive discounts on official merchandise from your favorite teams and celebrities.</p>
+            </div>
+            <div class="facility">
+                <h3>Fan Forums and Community</h3>
+                <p>Join discussions, share your thoughts, and connect with other fans in our vibrant community.</p>
+            </div>
+            <div class="facility">
+                <h3>VIP Meet and Greets</h3>
+                <p>Get the chance to meet your idols through our exclusive VIP meet and greet sessions.</p>
+            </div>
+            <div class="facility">
+                <h3>Early Ticket Sales</h3>
+                <p>Be the first to buy tickets for concerts, games, and events with our early bird offers.</p>
+            </div>
+            <div class="facility">
+                <h3>Personalized Recommendations</h3>
+                <p>Receive tailored content and event suggestions based on your interests and preferences.</p>
+            </div>
+            <div class="facility">
+                <h3>Interactive Fan Polls</h3>
+                <p>Participate in polls and let your voice be heard on important fan decisions.</p>
+            </div>
+            <div class="facility">
+                <h3>Behind-the-Scenes Footage</h3>
+                <p>Get a glimpse of what goes on behind the scenes with our exclusive footage.</p>
+            </div>
+            <div class="facility">
+                <h3>Member-Only Contests and Giveaways</h3>
+                <p>Enter exclusive contests and giveaways for a chance to win amazing prizes.</p>
+            </div>
+        </section>
+    
+        <section id="sitemap">
+            <div class="sitemap">
+                
+    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.1379849482532!2d67.04503867391804!3d24.92736884257975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f9b59133921%3A0xc443b311fafafc9a!2sKIET%20North%20Nazimbad%20Campus!5e0!3m2!1sen!2s!4v1715965266921!5m2!1sen!2s" width="600" height="450" style="margin-left: 28%; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                
+            </div>
+        </section>
        
         
         
     </main>
+
 
     <footer>
         <div class="sitemap">
@@ -708,6 +815,7 @@ h2 {
             <a href="#queries">Queries</a>
             <a href="#contact">Contact Us</a>
         </div>
+        
         <div class="advertise">
             <h3>Advertisement</h3>
            
